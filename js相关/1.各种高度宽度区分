@@ -1,9 +1,0 @@
-
-
-1.chrome下div的各个高度和宽度（在box-sizing : content-box模式下）：
-offsetHeight = content + padding + border;
-offsetWidth = content + padding + border;
-clientHeight = content + padding;
-clientWidth = content + padding;
-scrollHeight = div内部元素高度(content+padding+margin)
-scrollWidth = div内部元素宽度(content+padding+margin)
