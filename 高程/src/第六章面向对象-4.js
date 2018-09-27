@@ -35,3 +35,36 @@ Object.defineProperty(book, "year", {
 
 book.year = 2005;
 console.log(book.edition)
+
+//es6
+for (let i = (setTimeout(() => console.log(i), 2333), 0); i < 2; i++) {
+
+}
+
+
+var AA = function AA(name) {
+
+    this.name = name || '';
+}
+
+AA.prototype.age = 18;
+AA.getName = function () {
+    return this.name;
+}
+
+var a = new AA();
+debugger;
+console.log(a);
+var b = Object.prototype.isPrototypeOf(a)
+var c = AA.prototype.isPrototypeOf(a)
+console.log(b)
+console.log(c)
+// 获取原型对象
+var aa = Object.getPrototypeOf(a)
+
+//试一试"静态方法"
+// console.log(a.getName())
+console.log(AA.getName())
+
+console.log(a.hasOwnProperty('name'))
+console.log(a.hasOwnProperty('age'))
